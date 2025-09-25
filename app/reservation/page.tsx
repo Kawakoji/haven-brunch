@@ -43,22 +43,22 @@ export default function ReservationPage() {
   const onSubmit = async (data: ReservationForm) => {
     setIsSubmitting(true)
     
+    // Simulation d'envoi pour la démo (remplacer par votre service d'email)
     try {
-      const response = await fetch('/api/reservation', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      })
-
-      if (response.ok) {
-        setConfirmationData(data)
-        setShowConfirmation(true)
-        reset()
-      } else {
-        alert('Une erreur est survenue. Veuillez réessayer.')
-      }
+      // Ici vous pouvez intégrer un service comme EmailJS, Formspree, ou Netlify Forms
+      await new Promise(resolve => setTimeout(resolve, 1000)) // Simulation
+      
+      setConfirmationData(data)
+      setShowConfirmation(true)
+      reset()
+      
+      // Optionnel: rediriger vers un service d'email externe
+      const subject = `Réservation Haven Brunch - ${data.firstName} ${data.lastName}`
+      const body = `Nouvelle réservation:\n\nNom: ${data.firstName} ${data.lastName}\nEmail: ${data.email}\nTéléphone: ${data.phone}\nDate: ${data.date}\nHeure: ${data.time}\nPersonnes: ${data.guests}\nFormule: ${data.formula}\nMessage: ${data.message || 'Aucun'}`
+      
+      // Ouvrir le client email par défaut (optionnel)
+      // window.location.href = `mailto:contact@havenbrunch.fr?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+      
     } catch (error) {
       console.error('Error:', error)
       alert('Une erreur est survenue. Veuillez réessayer.')

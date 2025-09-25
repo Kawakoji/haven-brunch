@@ -11,6 +11,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://havenbrunch.netlify.app'),
   title: 'Haven Brunch - Un brunch raffiné pour sublimer vos moments précieux',
   description: 'Découvrez Haven Brunch, l\'expérience brunch chic et gourmande à Paris. Réservez votre table pour un moment d\'élégance accessible et de saveurs raffinées.',
   keywords: 'brunch, Paris, restaurant, élégant, raffiné, réservation, gastronomie',
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Haven Brunch - Un brunch raffiné pour sublimer vos moments précieux',
     description: 'Découvrez Haven Brunch, l\'expérience brunch chic et gourmande à Paris.',
-    url: 'https://havenbrunch.fr',
+    url: 'https://havenbrunch.netlify.app',
     siteName: 'Haven Brunch',
     images: [
       {
