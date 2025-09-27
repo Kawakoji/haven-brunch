@@ -59,8 +59,8 @@ module.exports = {
       },
       fontFamily: {
         'display': ['Crimson Text', 'serif'],
-        'body': ['Source Serif Pro', 'serif'],
-        'adumu': ['Source Serif Pro', 'serif'],
+        'body': ['Inter', 'sans-serif'],
+        'adumu': ['Adumu', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
