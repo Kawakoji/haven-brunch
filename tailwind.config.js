@@ -58,8 +58,8 @@ module.exports = {
         "off-white": "#FDFBF9",
       },
       fontFamily: {
-        'display': ['var(--font-tan-newyork)', 'TAN New York', 'serif'],
-        'body': ['var(--font-adumu)', 'Adumu Regular', 'sans-serif'],
+        'display': ['TAN New York', 'serif'],
+        'body': ['Adumu Regular', 'sans-serif'],
         'inter': ['var(--font-inter)', 'Inter', 'sans-serif'],
       },
       borderRadius: {
