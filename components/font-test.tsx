@@ -26,8 +26,14 @@ const FontTest = () => {
         
         <div>
           <h3 className="text-lg font-display mb-3">Adumu Regular (Corps de texte)</h3>
-          <p className="font-body text-base">
+          <p className="font-body text-base mb-2">
             Voici un exemple de paragraphe avec Adumu Regular. Cette police est utilisée pour le corps de texte principal du site Haven Brunch.
+          </p>
+          <p className="test-adumu">
+            TEST DIRECT: Ce texte utilise directement la classe CSS test-adumu avec font-family: 'Adumu Regular' !important
+          </p>
+          <p style={{fontFamily: 'Playfair Display, serif', fontSize: '18px', color: '#4E342E'}}>
+            TEST COMPARAISON: Ce texte utilise Playfair Display (Google Font) pour comparer
           </p>
         </div>
         

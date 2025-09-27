@@ -1,11 +1,15 @@
 /* Custom fonts loaded via CSS @font-face */
 @font-face {
   font-family: 'Adumu Regular';
-  src: url('/fonts/Adumu.ttf') format('truetype');
+  src: url('/fonts/Adumu.ttf') format('truetype'),
+       url('./fonts/Adumu.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
+
+/* Test avec une font web pour comparaison */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -68,6 +72,13 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-display;
   }
+}
+
+/* Test direct de la font Adumu */
+.test-adumu {
+  font-family: 'Adumu Regular', sans-serif !important;
+  font-size: 18px;
+  color: #4E342E;
 }
 
 /* Custom scrollbar */
