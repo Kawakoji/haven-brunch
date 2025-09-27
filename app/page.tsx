@@ -7,7 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
-import FontTest from '@/components/font-test'
+import AdumuTest from '@/components/adumu-test'
 
 const offers = [
   {
@@ -156,10 +156,10 @@ const OfferCard = ({ title, price, description, features, isPopular = false, del
 export default function Home() {
   return (
     <>
-      {/* Font Test Section - Temporary */}
-      <section className="py-16 bg-cream">
+      {/* Test Adumu - Temporaire */}
+      <section className="py-8 bg-cream">
         <div className="container mx-auto px-4">
-          <FontTest />
+          <AdumuTest />
         </div>
       </section>
 

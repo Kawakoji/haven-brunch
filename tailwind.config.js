@@ -58,9 +58,9 @@ module.exports = {
         "off-white": "#FDFBF9",
       },
       fontFamily: {
-        'display': ['TAN New York', 'serif'],
-        'body': ['Adumu Regular', 'sans-serif'],
-        'inter': ['var(--font-inter)', 'Inter', 'sans-serif'],
+        'display': ['Crimson Text', 'serif'],
+        'body': ['Adumu', 'Inter', 'sans-serif'],
+        'adumu': ['Adumu', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",

@@ -1,16 +1,14 @@
-/* Custom fonts loaded via CSS @font-face */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+
+/* Font Adumu */
 @font-face {
-  font-family: 'Adumu Regular';
-  src: url('/fonts/Adumu.ttf') format('truetype'),
-       url('./fonts/Adumu.ttf') format('truetype');
-  font-weight: 400;
+  font-family: 'Adumu';
+  src: url('/fonts/Adumu.woff2') format('woff2');
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
-
-/* Test avec une font web pour comparaison */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -72,13 +70,6 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-display;
   }
-}
-
-/* Test direct de la font Adumu */
-.test-adumu {
-  font-family: 'Adumu Regular', sans-serif !important;
-  font-size: 18px;
-  color: #4E342E;
 }
 
 /* Custom scrollbar */
