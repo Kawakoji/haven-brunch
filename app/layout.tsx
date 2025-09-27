@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import localFont from 'next/font/local'
 import './globals.css'
 import Navbar from '@/components/navbar'
 import Footer from '@/components/footer'
@@ -8,6 +9,18 @@ const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-inter'
+})
+
+const adumuRegular = localFont({
+  src: '../public/fonts/Adumu.ttf',
+  variable: '--font-adumu',
+  display: 'swap',
+})
+
+const tanNewYork = localFont({
+  src: '../public/fonts/TAN-NewYork.woff2',
+  variable: '--font-tan-newyork',
+  display: 'swap',
 })
 
 export const metadata: Metadata = {
@@ -57,7 +70,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="fr" className={inter.variable}>
+    <html lang="fr" className={`${inter.variable} ${adumuRegular.variable} ${tanNewYork.variable}`}>
       <body className="antialiased">
         <Navbar />
         <main>{children}</main>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test des Fonts - Haven Brunch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'display': ['var(--font-tan-newyork)', 'TAN New York', 'serif'],
+                        'body': ['var(--font-adumu)', 'Adumu Regular', 'sans-serif'],
+                        'inter': ['var(--font-inter)', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :root {
+            --font-tan-newyork: 'TAN New York', serif;
+            --font-adumu: 'Adumu Regular', sans-serif;
+            --font-inter: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-cream text-cocoa-brown p-8">
+    <div class="max-w-4xl mx-auto space-y-8">
+        <h1 class="text-4xl font-display text-center mb-8">Test des Fonts Haven Brunch</h1>
+        
+        <div class="space-y-6">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h2 class="text-2xl font-display mb-4">TAN New York (Titres)</h2>
+                <p class="text-lg font-display">Voici un exemple de titre avec TAN New York</p>
+                <p class="text-base font-display">Titre plus petit avec TAN New York</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h2 class="text-2xl font-display mb-4">Adumu Regular (Corps de texte)</h2>
+                <p class="text-base font-body mb-4">
+                    Voici un exemple de paragraphe avec Adumu Regular. Cette police est utilisée pour le corps de texte principal du site Haven Brunch.
+                </p>
+                <p class="text-sm font-body">
+                    Texte plus petit avec Adumu Regular pour les descriptions et détails.
+                </p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h2 class="text-2xl font-display mb-4">Inter (Fallback)</h2>
+                <p class="text-base font-inter">
+                    Voici un exemple avec Inter comme police de fallback.
+                </p>
+            </div>
+        </div>
+        
+        <div class="bg-golden-beige p-6 rounded-lg">
+            <h3 class="text-xl font-display mb-4">Exemple de mise en page Haven Brunch</h3>
+            <p class="font-body mb-4">
+                Découvrez Haven Brunch, l'expérience brunch chic et gourmande à Paris. 
+                Réservez votre table pour un moment d'élégance accessible et de saveurs raffinées.
+            </p>
+            <button class="bg-golden-caramel text-white px-6 py-2 rounded font-body hover:bg-cocoa-brown transition-colors">
+                Réserver maintenant
+            </button>
+        </div>
+    </div>
+</body>
+</html>
