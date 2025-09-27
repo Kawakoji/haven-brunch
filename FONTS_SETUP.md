@@ -11,8 +11,8 @@
 Pour que les nouvelles fonts fonctionnent, vous devez ajouter les fichiers de fonts dans le dossier `public/fonts/` :
 
 ### 1. TAN New York
-- Fichier : `public/fonts/TAN-NewYork.woff2`
-- Format : WOFF2 (recommandé pour le web)
+- Fichier : `public/fonts/TAN-NewYork.ttf` (à ajouter)
+- Format : TTF (fonctionne parfaitement)
 - Usage : Titres principaux, headers
 
 ### 2. Adumu Regular
@@ -25,7 +25,7 @@ Pour que les nouvelles fonts fonctionnent, vous devez ajouter les fichiers de fo
 ```
 public/
 └── fonts/
-    ├── TAN-NewYork.woff2 (à ajouter)
+    ├── TAN-NewYork.ttf (à ajouter)
     └── Adumu.ttf ✅
 ```
 

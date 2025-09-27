@@ -18,7 +18,7 @@ const adumuRegular = localFont({
 })
 
 const tanNewYork = localFont({
-  src: '../public/fonts/TAN-NewYork.woff2',
+  src: '../public/fonts/TAN-NewYork.ttf',
   variable: '--font-tan-newyork',
   display: 'swap',
 })
