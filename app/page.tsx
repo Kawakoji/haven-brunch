@@ -7,6 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
+import FontTest from '@/components/font-test'
 
 const offers = [
   {
@@ -155,6 +156,13 @@ const OfferCard = ({ title, price, description, features, isPopular = false, del
 export default function Home() {
   return (
     <>
+      {/* Font Test Section - Temporary */}
+      <section className="py-16 bg-cream">
+        <div className="container mx-auto px-4">
+          <FontTest />
+        </div>
+      </section>
+
       <Hero 
         title="HAVEN BRUNCH"
         subtitle="Un brunch raffiné pour sublimer vos moments précieux."
